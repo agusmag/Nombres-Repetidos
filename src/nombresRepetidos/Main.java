@@ -1,20 +1,18 @@
 package nombresRepetidos;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class Main {
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws IOException {
 		
-		String miPath = "IN/LoteBase.txt";
+		String miPathE = "IN/LoteBase.txt";
+		String miPathS = "OUT/LoteBase.txt";
 		Resolucion listaExploradores = new Resolucion();
 		
-		int numGanadores = listaExploradores.CargarExploradores(miPath);
+		int numGanadores = listaExploradores.CargarExploradores(miPathE);
 		
-		listaExploradores.MostrarGanadores(numGanadores);
-		
-		
-		
+		listaExploradores.MostrarGanadores(numGanadores,miPathS);
 		
 		
 		

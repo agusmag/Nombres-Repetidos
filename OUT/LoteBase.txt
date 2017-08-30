@@ -1,0 +1,10 @@
+Ana 5
+Ricardo 2
+Juan 7
+Ester 1
+Juana 4
+Pedro 1
+Federico 1
+Ismael 1
+Pilar 2
+Manuel 1
