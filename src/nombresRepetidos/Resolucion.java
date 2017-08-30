@@ -47,9 +47,9 @@ public class Resolucion {
 	
 	public void MostrarGanadores(int numGanadores, String path) throws IOException{
 		
-		//Collections.sort(this.listaExploradores);
+		Collections.sort(this.listaExploradores);
 		PrintWriter pw = new PrintWriter(new FileWriter(path));
-		for (int i = 0; i < this.listaExploradores.size(); i++) {
+		for (int i = 0; i < numGanadores; i++) {
 			System.out.println(listaExploradores.get(i));
 			pw.println(this.listaExploradores.get(i).toString());
 		}

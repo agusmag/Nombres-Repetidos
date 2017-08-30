@@ -27,13 +27,13 @@ public class Explorador implements Comparable<Explorador>{
 			if (this.nombre.compareTo(that.nombre) == 0)
 				return 0;
 			else if (this.nombre.compareTo(that.nombre) > 0)
-				return 1;
+				return -1;
 			
-			return 0;
-		}else if (this.repetido > that.repetido)
 			return 1;
+		}else if (this.repetido > that.repetido)
+			return -1;
 		
-		return 0;
+		return 1;
 	}
 
 	public String getNombre() {
